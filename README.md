@@ -1,35 +1,72 @@
-# Aplikasi Penjualan (Plowcart) - Tugas Besar WebPro
+📦 Aplikasi Penjualan
 
-Proyek ini adalah aplikasi E-Commerce berbasis web yang dirancang untuk mengelola penjualan produk, kategori, dan transaksi pelanggan secara efisien.
+Aplikasi Penjualan adalah aplikasi berbasis web yang digunakan untuk mengelola data penjualan, meliputi kategori produk, data barang, pelanggan, serta transaksi penjualan. Aplikasi ini dibuat untuk membantu proses pengelolaan penjualan agar lebih terstruktur, efektif, dan mudah digunakan.
 
-## 🚀 Fitur Utama
+📝 Deskripsi
 
-### Pengguna (Customer)
-* Melakukan pendaftaran dan login akun.
-* Menjelajahi produk berdasarkan kategori.
-* Melakukan pemesanan produk dengan detail invoice otomatis.
+Aplikasi ini dirancang menggunakan framework Laravel dengan konsep MVC (Model–View–Controller). Sistem ini memungkinkan admin untuk mengelola seluruh data penjualan, mulai dari pengelolaan kategori dan produk hingga pencatatan transaksi penjualan. Aplikasi ini cocok digunakan sebagai media pembelajaran maupun sebagai dasar pengembangan sistem penjualan yang lebih kompleks.
 
-### Admin
-* Manajemen Kategori: Menambah, mengubah, dan menghapus kategori (mendukung sub-kategori).
-* Manajemen Produk: Mengelola stok, harga, deskripsi, dan foto produk.
-* Manajemen Pesanan: Memvalidasi pembayaran, mengubah status pesanan, dan mencetak laporan transaksi.
+✨ Fitur Aplikasi
+🔐 Autentikasi
 
-## 📊 Struktur Database (ERD)
+Login
 
-Sistem ini didukung oleh database relasional dengan tabel-tabel utama sebagai berikut:
-* **Admin**: Menyimpan data kredensial pengelola.
-* **Categories**: Mengatur pengelompokan produk dengan fitur *parent-child*.
-* **Products**: Menyimpan detail barang termasuk harga, stok, dan foto.
-* **Customers**: Data identitas pembeli beserta alamat lengkap (District & City).
-* **Orders & Order Details**: Mencatat transaksi, nomor invoice, jumlah barang (qty), dan harga saat transaksi dilakukan.
+Logout
 
-## 🛠️ Teknologi yang Digunakan
-* **Bahasa Pemrograman**: PHP (Laravel Framework)
-* **Template Engine**: Blade
-* **Database**: MySQL
-* **Styling**: Bootstrap / CSS
+📂 Manajemen Kategori
 
-## ⚙️ Cara Instalasi
-1. Clone repositori ini:
-   ```bash
-   git clone [https://github.com/magalisidiqikbar-lab/Aplikasi_Penjualan.git](https://github.com/magalisidiqikbar-lab/Aplikasi_Penjualan.git)
+Menambahkan kategori
+
+Mengubah kategori
+
+Menghapus kategori
+
+Menampilkan daftar kategori
+
+📦 Manajemen Produk
+
+Menambahkan produk
+
+Mengedit data produk
+
+Menghapus produk
+
+Mengelola stok dan harga
+
+Menampilkan daftar produk
+
+🧾 Transaksi Penjualan
+
+Membuat transaksi penjualan
+
+Menyimpan data pesanan
+
+Menampilkan daftar transaksi
+
+Melihat detail transaksi
+
+🛠️ Teknologi yang Digunakan
+
+PHP (Laravel Framework)
+
+MySQL
+
+Blade Template Engine
+
+HTML, CSS, JavaScript
+
+Bootstrap
+
+🗄️ Struktur Database
+
+Aplikasi ini menggunakan beberapa tabel utama, antara lain:
+
+users
+
+categories
+
+products
+
+orders
+
+order_details
