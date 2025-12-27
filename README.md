@@ -1,72 +1,90 @@
-📦 Aplikasi Penjualan
+Aplikasi Penjualan ini merupakan sistem E-Commerce berbasis web yang dikembangkan untuk mendukung pengelolaan data penjualan secara terintegrasi. Sistem ini membantu proses pengaturan produk, pengelompokan kategori, serta pencatatan transaksi pelanggan agar berjalan lebih efektif dan terstruktur.
 
-Aplikasi Penjualan adalah aplikasi berbasis web yang digunakan untuk mengelola data penjualan, meliputi kategori produk, data barang, pelanggan, serta transaksi penjualan. Aplikasi ini dibuat untuk membantu proses pengelolaan penjualan agar lebih terstruktur, efektif, dan mudah digunakan.
+🚀 Fungsionalitas Utama
+Customer
 
-📝 Deskripsi
+Membuat akun dan melakukan autentikasi login.
 
-Aplikasi ini dirancang menggunakan framework Laravel dengan konsep MVC (Model–View–Controller). Sistem ini memungkinkan admin untuk mengelola seluruh data penjualan, mulai dari pengelolaan kategori dan produk hingga pencatatan transaksi penjualan. Aplikasi ini cocok digunakan sebagai media pembelajaran maupun sebagai dasar pengembangan sistem penjualan yang lebih kompleks.
+Melihat daftar produk yang tersedia.
 
-✨ Fitur Aplikasi
-🔐 Autentikasi
+Menelusuri produk berdasarkan kategori.
 
-Login
+Melakukan pemesanan produk dan menerima invoice secara otomatis.
 
-Logout
+Admin
 
-📂 Manajemen Kategori
+Pengelolaan Kategori
+Mengatur kategori dan sub-kategori produk.
 
-Menambahkan kategori
+Pengelolaan Produk
+Menambahkan, memperbarui, dan menghapus produk, termasuk pengaturan stok, harga, deskripsi, dan gambar.
 
-Mengubah kategori
+Pengelolaan Transaksi
+Memeriksa pesanan masuk, memvalidasi pembayaran, memperbarui status pesanan, serta menghasilkan laporan penjualan.
 
-Menghapus kategori
+📊 Desain Database
 
-Menampilkan daftar kategori
+Aplikasi ini menggunakan database relasional dengan struktur tabel utama sebagai berikut:
 
-📦 Manajemen Produk
+Admins – Menyimpan data akun administrator.
 
-Menambahkan produk
+Categories – Mengelola klasifikasi produk dengan hubungan hierarki.
 
-Mengedit data produk
+Products – Menyimpan informasi detail produk.
 
-Menghapus produk
+Customers – Menyimpan data pelanggan beserta alamat.
 
-Mengelola stok dan harga
+Orders dan Order Details – Menyimpan informasi transaksi, invoice, jumlah pembelian, dan harga transaksi.
 
-Menampilkan daftar produk
+🛠️ Tools & Teknologi
 
-🧾 Transaksi Penjualan
+Backend: PHP (Laravel Framework)
 
-Membuat transaksi penjualan
+Frontend Template: Blade
 
-Menyimpan data pesanan
+Database Management System: MySQL
 
-Menampilkan daftar transaksi
+User Interface: Bootstrap & CSS
 
-Melihat detail transaksi
+⚙️ Panduan Instalasi
 
-🛠️ Teknologi yang Digunakan
+Unduh repositori:
 
-PHP (Laravel Framework)
+git clone https://github.com/magalisidiqikbar-lab/Aplikasi_Penjualan.git
 
-MySQL
 
-Blade Template Engine
+Masuk ke folder aplikasi:
 
-HTML, CSS, JavaScript
+cd Aplikasi_Penjualan
 
-Bootstrap
 
-🗄️ Struktur Database
+Pasang dependency:
 
-Aplikasi ini menggunakan beberapa tabel utama, antara lain:
+composer install
 
-users
 
-categories
+Siapkan file environment:
 
-products
+cp .env.example .env
 
-orders
 
-order_details
+Buat application key:
+
+php artisan key:generate
+
+
+Sesuaikan konfigurasi database pada file .env
+
+Jalankan migrasi:
+
+php artisan migrate
+
+
+Jalankan server lokal:
+
+php artisan serve
+
+
+Akses aplikasi:
+
+http://localhost:8000
